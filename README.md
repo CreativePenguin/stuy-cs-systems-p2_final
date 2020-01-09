@@ -16,7 +16,25 @@ Game can also end if the number of mafia outnumber or equal the amount of non-ma
 
 ## Technical Design
 ### Topics Covered
+Processes -- We're using a bloody forking server  
 Networking -- Connect multiple clients together with a forking server  
-Allocating Memory -- Keep track of the roles of each player, their nicknames, and their status (dead or alive)  
-### Extra features
-Files -- Keep track of message history, will also be organized by what each player said. Detective will be able to access message history between mafia, but usernames are blurred
+Shared Memory -- Keep track of the roles of each player, their nicknames, and their status (dead or alive)  
+Signals -- Timed signals to keep track of the amount of time players get for each round (using alarm())  
+Named Pipes -- Each subprocess will connect to named pipe. Pipe collects messages and sends them back  
+### Data Structures
+``` c
+struct user {
+    char name[256]; //Will be displayed before each message sent from server
+    char ip[15];  //Holds ip address. Will be used to keep track of clients
+    int is_alive;  //Can only send messages if != 0
+    char role;  //'d' = detective, 'm' = mafia, 'c' = citizen. Features are restricted depending on role
+};
+```
+## Roles
+Max  
+Setting up messaging system  
+
+Winston  
+
+## Timeline
+Deadline: 1/17
