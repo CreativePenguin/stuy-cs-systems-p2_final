@@ -38,7 +38,7 @@ Game mechanics
 Timed messages
 
 Winston  
-Also set up networking
+Also set up networking  
 Messaging system (including things like !vote [name])  
 Manage communication between two servers  
 
