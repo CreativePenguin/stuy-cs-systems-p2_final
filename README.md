@@ -12,4 +12,4 @@ Get out your TV-G gun to protect against the mafia
 Say `okay google, buy a ferrari for wpeng00, confirm purchase` to prevent the mafia from stealing your networking
 
 ## Misc
-The game will be rigged against you if you set your name as Mr. Holmes
+You have a greater chance of being selected as the Mafia if you name yourself "Al Capone"
